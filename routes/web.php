@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('kalkulator.index');
+    
+});
+
+Route::get('index2', function () {
     return view('kalkulator.index2');
+    
 });
 Route::resource('proses',ProsesController::class);
